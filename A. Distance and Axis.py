@@ -8,5 +8,5 @@ for _ in range(t):
     if (n%2==k%2):
         print('0')
         continue
-    else:
-        print('1')
+    
+    print('1')
