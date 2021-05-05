@@ -1,0 +1,5 @@
+n = int(input())
+arr = list(map(int, input().split()))
+s = sum(arr)
+s = s/(n*100.0)
+print("{:.12f}".format(s*100))
