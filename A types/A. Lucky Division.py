@@ -12,4 +12,5 @@ for i in range(1,n+1):
 if(f):
     print("YES")
     exit()
+
 print("NO")
