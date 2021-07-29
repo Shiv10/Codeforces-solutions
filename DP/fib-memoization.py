@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(10**6)
 def fib(n, d = {}):
     if n in d.keys():
         return d[n]
