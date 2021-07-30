@@ -13,7 +13,8 @@ def targetSum(n, a, d={}):
             if isinstance(res, list):
                 res.append(i)
                 d[n] = res
-                return res    
+                return res
+    d[n] = -1    
     return -1
 
 n = int(input())
