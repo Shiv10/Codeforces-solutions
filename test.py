@@ -29,6 +29,7 @@ def longestSubString(a, b):
     return "No substring"
 
 
+  w=""
 
   while(d[row][col]!=0):
     w+= a[row-1]
