@@ -1,13 +1,14 @@
 s = input()
-d = [0]*len(s)
-for i in range(len(s)-1):
-    if s[i]==s[i+1]:
-        d[i]=1
-        continue
-t = int(input())
-for _ in range(t):
-    a, b = map(int, input().split())
-    a = a-1
-    b = b-1
-    c = sum(d[a:b])
-    print(c)
+c = 0
+a = [0]
+for i in range(len(s) - 1):
+    if s[i] == s[i + 1]:
+        c += 1
+        
+    a.append(c)
+m = int(input())
+for i in range(m):
+    l, r = map(int, input().split())
+    l -= 1
+    r -= 1
+    print(a[r] - a[l])
