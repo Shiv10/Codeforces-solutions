@@ -1,7 +1,7 @@
 def longestSubString(a, b):
   if (len(a) == 0 or len(b) == 0):
     return "No substring"
-
+    
   l = len(a)
   t = len(b)
 
