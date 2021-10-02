@@ -17,4 +17,6 @@ int main(){
             else arr[i][j] = max(arr[i][j-1], arr[i+1][j]);
         }
     }
+    cout<<arr[0][n-1];
+    return 0;
 }
