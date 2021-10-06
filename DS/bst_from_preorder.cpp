@@ -35,3 +35,15 @@ int constructBst(vector<int> &preorder, int n, int pos, Node *current, int left,
     return pos;
 }
 
+Node* bstFromPreorder(vector<int>& preorder) {    
+    int n = preorder.size();
+    if(n==0)
+        return NULL;
+        
+    Node *root = getNewNode(preorder[0]);
+    if(n==1)
+        return root;
+
+    constructBst(preorder,n,1,root,INT_MIN,INT_MAX);
+    return root;
+}
