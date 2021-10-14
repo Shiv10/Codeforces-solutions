@@ -43,7 +43,12 @@ vector<int> minSum(int n, vector<int> squares ){
 }
 
 int numSquares(int n)
-{
+{   
+    cout<<sqrt(n)<<" "<<ceil(sqrt(n))<<" "<<floor(sqrt(n))<<endl;
+    if (ceil(sqrt(n)) == floor(sqrt(n))) {
+        cout<<n<<endl;
+        return 0;
+    }
     vector<int> squares;
     int i, j;
     for (i = 1; i < n; i += 1)
